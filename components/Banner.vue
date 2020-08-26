@@ -16,9 +16,5 @@ export default {
  .background {
    background-image: url('../assets/img/background.png');
    height: 100%;
-
-   @media(max-width: 800px;){
-
-   }
  }
 </style>

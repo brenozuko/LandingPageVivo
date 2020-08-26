@@ -17,12 +17,5 @@ import Contact from "./Contact";
 export default {};
 </script>
 
-<style lang="postcss">
-.header-items {
-  @media (max-width: 800px;) {
-    display: hidden;
-  }
-}
-</style>
 
 
