@@ -4,6 +4,8 @@
     <Header />
     <Banner />
     <Consulta/>
+    <Products/>
+    <footer/>
   </div>
 </template>
 
@@ -11,7 +13,9 @@
 import Header from "~/components/Header";
 import Banner from "~/components/Banner";
 import Menu from "~/components/Menu";
-import Consulta from "~/components/Consulta"
+import Consulta from "~/components/Consulta";
+import Products from "~/components/Products";
+import Footer from "~/components/Footer";
 export default {
   head: {
     link: [
