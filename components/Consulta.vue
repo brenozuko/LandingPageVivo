@@ -5,8 +5,8 @@
       <h1 class="lg:mr-10 ml-2">Consulte sua cobertura</h1>
     </div>
     <div class = "ml-6">
-      <input type="text" class ="lg:mr-4 mb-4 rounded-lg py-4 lg:px-2 px-12" placeholder="Digite seu CEP" />
-      <input type="text" class="rounded-lg lg:mr-12 mb-4 py-4 lg:px-2 px-12" placeholder="Digite seu telefone" />
+      <input type="text" class ="lg:mr-4 mb-4 rounded-lg py-4 lg:px-6 px-12" placeholder="Digite seu CEP" />
+      <input type="text" class="rounded-lg lg:mr-12 mb-4 py-4 lg:px-6 px-12" placeholder="Digite seu telefone" />
       <button class ="background-button py-4 px-16 ml-8 text-white  rounded-lg focus:outline-none focus:shadow-outline hover:bg-purple-700">Verificar</button>
     </div>
   </div>

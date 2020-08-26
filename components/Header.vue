@@ -1,6 +1,7 @@
 <template>
   <div class="bg-white flex pt-2 justify-between pb-2">
-    <img src="../assets/img/logo-vivo.png" alt="logo vivo" />
+    <img src="../assets/img/logo-vivo.png" alt="logo vivo" class="h-12" />
+    <img src="../assets/img/hamburger-menu.png" alt="toggle menu" class="lg:hidden h-full mr-2 mt-2">
     <div class="align-middle hidden lg:flex">
       <button
         class="bg-green-600 text-gray-100 my-2 px-2 rounded-lg mr-8 focus:outline-none focus:shadow-outline hover:bg-green-400"
