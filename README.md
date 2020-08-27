@@ -1,4 +1,6 @@
-# lpvivo
+# Landing Page Vivo - Teste M2
+
+Realizado por Breno Zukowski.
 
 ## Build Setup
 
