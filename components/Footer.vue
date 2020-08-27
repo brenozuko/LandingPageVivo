@@ -6,7 +6,7 @@
     </div>
     <div class="flex justify-center lg:6/12 w-full">
 
-      <ul class="text-white mr-12">
+      <ul class="text-white mr-32">
         <li><a href='#'>»Fibra</a></li>
         <li><a href='#'>»Internet</a></li>
         <li><a href='#'>»Fixo</a></li>

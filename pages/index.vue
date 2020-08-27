@@ -5,6 +5,7 @@
     <Banner />
     <Consulta/>
     <Products/>
+    <BannerBottom/>
     <Footer/>
   </div>
 </template>
@@ -15,6 +16,7 @@ import Banner from "~/components/Banner";
 import Menu from "~/components/Menu";
 import Consulta from "~/components/Consulta";
 import Products from "~/components/Products";
+import BannerBottom from "~/components/BannerBottom"
 import Footer from "~/components/Footer";
 export default {
   head: {
