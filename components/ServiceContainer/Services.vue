@@ -4,9 +4,9 @@
       <div
         v-for="item in arrayDados"
         :key="item.title"
-        class="card py-4 mb-8 ml-8 bg-white rounded-lg max-w-sm shadow-lg"
+        class="card py-4 m-4 bg-white rounded-lg max-w-sm shadow-lg"
       >
-        <img class="h-20 mx-auto" :src="item.img" alt="icon" />
+        <img class="h-20 mx-auto" src="require(item.img)" alt="icon" />
         <div class="px-6 py-4 text-center">
           <div class="font-bold text-xl mb-2 color-text">{{item.title}}</div>
           <p class="text-gray-600 text-sm">{{item.description}}</p>
@@ -25,7 +25,7 @@ export default {
     return {
       arrayDados: [
         {
-          img: "../../assets/img/fibra.png",
+          img: "~/assets/img/fibra.png",
           title: "Vivo Fibra",
           description:
             "Com a Vivo Fibra você e toda sua família podem navegar na internet com ultravelocidade.",
@@ -37,7 +37,7 @@ export default {
             "Com a Banda Larga da Vivo você tem internet de qualidade por toda a casa.",
         },
         {
-          img: "../../assets/img/tv.png",
+          img: "../../assets/img/tv-icon.png",
           title: "Vivo TV",
           description:
             "A Vivo TV tem as melhores programações, tudo com exclusividade para você.",
@@ -49,7 +49,7 @@ export default {
             "Com o Vivo Fixo você pode fazer ligações ilimitadas locais ou nacionais e falar à vontade.",
         },
         {
-          img: "../../assets/img/controle.png",
+          img: "~/assets/img/controle.png",
           title: "Vivo Controle",
           description:
             "Com o Vivo Controle você tem a maior cobertura 4.5G do Brasil, apps e ligações ilimitadas.",
@@ -57,6 +57,7 @@ export default {
       ],
     };
   },
+
 };
 </script>
 
