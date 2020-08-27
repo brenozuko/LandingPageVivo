@@ -5,7 +5,7 @@
     <Banner />
     <Consulta/>
     <Products/>
-    <footer/>
+    <Footer/>
   </div>
 </template>
 
