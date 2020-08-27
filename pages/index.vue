@@ -1,22 +1,22 @@
 <template>
   <div>
-    <Menu />
     <Header />
     <Banner />
-    <Consulta/>
-    <Products/>
-    <BannerBottom/>
-    <Footer/>
+    <Consulta />
+    <ProductContainer />
+    <BannerBottom />
+    <ServiceContainer />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from "~/components/Header";
+import Header from "~/components/Header/Header";
 import Banner from "~/components/Banner";
-import Menu from "~/components/Menu";
 import Consulta from "~/components/Consulta";
-import Products from "~/components/Products";
-import BannerBottom from "~/components/BannerBottom"
+import ProductContainer from "~/components/ProductsContainer/ProductContainer";
+import BannerBottom from "~/components/BannerBottom";
+import ServiceContainer from "~/components/ServiceContainer/ServiceContainer";
 import Footer from "~/components/Footer";
 export default {
   head: {

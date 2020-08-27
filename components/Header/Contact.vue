@@ -1,6 +1,6 @@
 <template>
   <div class = "flex relative leading-5">
-    <img class = "h-8 mt-2 mr-2 inline-block align-bottom" src="../assets/img/icon-2.png" alt="Icone Vivo Cliente">
+    <img class = "h-8 mt-2 mr-2 inline-block align-bottom" src="../../assets/img/icon-2.png" alt="Icone Vivo Cliente">
     <div class="flex-col mr-16 justify-left">
       <p class="text-gray-600">{{description}}</p>
       <h1>{{number}}</h1>

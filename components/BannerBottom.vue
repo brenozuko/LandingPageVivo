@@ -1,11 +1,11 @@
 <template>
   <div class="background-bottom align-center hidden lg:flex justify-end bg-cover py-12">
-    <div class="flex-col flex-wrap">
+    <div class="flex-col flex-wrap ml-12">
       <h3 class="text-3xl text-bottom">Ligue grátis</h3>
       <h1 class="text-4xl text-white">0800 955 1000</h1>
     </div>
 
-    <div class="flex-col flex-wrap ml-48 mt-4">
+    <div class="flex-col flex-wrap ml-32 mt-4">
       <h3 class="text-xl text-bottom">Ou ligamos pra você</h3>
       <input
         type="text"
