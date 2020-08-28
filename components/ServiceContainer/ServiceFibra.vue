@@ -4,7 +4,7 @@
         <img class="h-20 mx-auto" src="../../assets/img/fibra.png" alt="icon" />
         <div class="px-6 py-4 text-center">
           <div class="font-bold text-xl mb-2 color-text">Vivo Fibra</div>
-          <p class="text-gray-600 text-sm">Com a Vivo Fibra você e toda sua família podem navegar na internet com ultravelocidade.</p>
+          <p class="text-gray-600 text-sm" style="min-height: 84px;">Com a Vivo Fibra você e toda sua família podem navegar na internet com ultravelocidade.</p>
           <Button />
         </div>
       </div>

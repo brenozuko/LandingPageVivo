@@ -35,6 +35,9 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    {
+      src: '~/plugins/vue-awesome-swiper'
+    }
   ],
   /*
   ** Auto import components

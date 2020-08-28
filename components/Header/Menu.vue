@@ -1,8 +1,7 @@
 <template>
-  <div>
     <ul
-      :class="{'lg:translateX-0 isOpen': toggle === true, 'lg:translateX-0 isClosed': toggle === false }"
-      class="lg:flex fixed lg:static lg:w-full lg:h-full w-screen h-screen background-menu leading-normal"
+      :class="{'isOpen': toggle === true, 'isClosed': toggle === false }"
+      class="lg:flex top-0 left-0 fixed lg:static lg:h-auto lg:w-full z-10 h-full w-screen background-menu leading-normal"
     >
       <li class ="mt-4">
         <a @click="changeToggle()" class="lg:hidden cursor-pointe">Fechar X</a>
@@ -23,7 +22,6 @@
         <a class="inline-block py-2 px-4 lg:text-gray-100 text-gray-600 font-bold" href="#">TV</a>
       </li>
     </ul>
-  </div>
 </template>
 
 <script>

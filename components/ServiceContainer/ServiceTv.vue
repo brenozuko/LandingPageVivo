@@ -4,7 +4,7 @@
         <img class="h-20 mx-auto" src="../../assets/img/tv-icon.png" alt="icon" />
         <div class="px-6 py-4 text-center">
           <div class="font-bold text-xl mb-2 color-text">Vivo TV</div>
-          <p class="text-gray-600 text-sm">A Vivo TV tem as melhores programações, tudo com exclusividade para você.</p>
+          <p class="text-gray-600 text-sm" style="min-height: 84px;">A Vivo TV tem as melhores programações, tudo com exclusividade para você.</p>
           <Button />
         </div>
       </div>

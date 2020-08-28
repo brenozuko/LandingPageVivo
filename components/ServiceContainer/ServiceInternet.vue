@@ -4,7 +4,7 @@
         <img class="h-20 mx-auto" src="../../assets/img/internet.png" alt="icon" />
         <div class="px-6 py-4 text-center">
           <div class="font-bold text-xl mb-2 color-text">Vivo Internet</div>
-          <p class="text-gray-600 text-sm">Com a Banda Larga da Vivo você tem internet de qualidade por toda a casa.</p>
+          <p class="text-gray-600 text-sm" style="min-height: 84px;">Com a Banda Larga da Vivo você tem internet de qualidade por toda a casa.</p>
           <Button />
         </div>
       </div>

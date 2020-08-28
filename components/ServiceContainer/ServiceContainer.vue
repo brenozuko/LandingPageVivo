@@ -3,12 +3,25 @@
     <div class="text-center">
       <h1 class="color pt-8 text-center">Escolha o serviço que você deseja</h1>
     </div>
-    <div class="flex py-16 align-middle justify-center border-container">
-      <ServiceFibra class="mx-4"/>
-      <ServiceInternet class="mr-4"/>
-      <ServiceTv class="mr-4" />
-      <ServiceFixo class="mr-4" />
-      <ServiceControle class="mr-4"/>
+    <div class="flex justify-center" style="max-width: 1364px;">
+      <swiper ref="mySwiper" :options="swiperOptions">
+        <swiper-slide>
+          <ServiceFibra class="ml-8" />
+        </swiper-slide>
+        <swiper-slide>
+          <ServiceInternet class="ml-8" />
+        </swiper-slide>
+        <swiper-slide>
+          <ServiceTv class="ml-8" />
+        </swiper-slide>
+        <swiper-slide>
+          <ServiceFixo class="ml-8" />
+        </swiper-slide>
+        <swiper-slide>
+          <ServiceControle class="ml-8" />
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
     </div>
   </div>
 </template>
@@ -20,13 +33,53 @@ import ServiceInternet from "./ServiceInternet";
 import ServiceControle from "./ServiceControle";
 import ServiceTv from "./ServiceTv";
 import ServiceFixo from "./ServiceFixo";
-export default {};
+export default {
+  name: "carrousel",
+  data() {
+    return {
+      swiperOptions: {
+        slidesPerView: 5,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+      },
+    };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper;
+    },
+  },
+  mounted() {
+    console.log("Current Swiper instance object", this.swiper);
+    this.swiper.slideTo(3, 1000, false);
+  },
+};
 </script>
 
 <style lang="postcss" scoped>
 .background-services {
   background-color: #eaeaea;
-  z-index: 9999;
 }
 
 .color {

@@ -18,6 +18,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "nuxt": "^2.13.0",
     "prettier": "^2.1.0",
+    "swiper": "^6.1.2",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-axios": "^2.1.5"
   },
   "devDependencies": {
