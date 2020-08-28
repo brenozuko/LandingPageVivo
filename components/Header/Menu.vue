@@ -4,7 +4,7 @@
       class="lg:flex top-0 left-0 fixed lg:static lg:h-auto lg:w-full z-10 h-full w-screen background-menu leading-normal"
     >
       <li class ="mt-4">
-        <a @click="changeToggle()" class="lg:hidden cursor-pointe">Fechar X</a>
+        <a @click="changeToggle()" class="lg:hidden cursor-pointer">Fechar X</a>
       </li>
       <li class="-mb-px mr-1 border-b-2 lg:border-0 text-center">
         <a

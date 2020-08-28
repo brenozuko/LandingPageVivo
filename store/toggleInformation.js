@@ -1,10 +1,9 @@
-
 export const state = () => ({
-  toggle: false
+  toggleInfo: true
 })
 
 export const mutations = {
   toggleChange(state) {
-    state.toggle = !state.toggle
+    state.toggleInfo = !state.toggleInfo
   }
 }

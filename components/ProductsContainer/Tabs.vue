@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap justify-center">
+  <div class="flex flex-wrap ml-8 justify-start">
     <div>
       <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
         <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: "pink-tabs",
+  name: "purple-tabs",
   data() {
     return {
       openTab: 1,
@@ -54,3 +54,9 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+  .tab-border{
+    border-bottom: 4px solid #660099;
+  }
+</style>
