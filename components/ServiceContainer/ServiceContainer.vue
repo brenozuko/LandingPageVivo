@@ -42,7 +42,6 @@ export default {
     ServiceFixo,
   },
 
-  name: "carrousel",
   data() {
     return {
       swiperOptions: {
