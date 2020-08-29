@@ -4,7 +4,7 @@
       v-for="(item, index) in apiResult"
       :key="item.tab"
       :class="{'flex': tabIndex === index, 'hidden': tabIndex !== index}"
-      class="border-4 border-gray-400 justify-center p-12 rounded-lg"
+      class="border-top-4 border-bottom-4 border-gray-400 justify-center p-12 rounded-lg"
     >
       <div
         v-for="card in item.items"
@@ -18,9 +18,9 @@
           >{{card.download_speed + " "+ card.download_speed_unit}}</div>
           <p class="text-white text-sm">Com Wi-Fi grátis</p>
           <div class="flex justify-center">
-            <h1 class="text-white text-4xl">R$129</h1>
+            <h1 class="text-white text-4xl">R${{parseInt(card.price)}}</h1>
             <div>
-              <h2 class="text-white text-xl mt-2">,75</h2>
+              <h2 class="text-white text-xl mt-2">,{{parseInt((card.price*100 - Math.floor(card.price)*100))}}</h2>
               <h2 class="text-white text-xs -mt-2 -mr-4">/mês</h2>
             </div>
           </div>
@@ -41,6 +41,10 @@ export default {
       tabIndex: (state) => state.infoStore.tabIndex,
     }),
   },
+
+  methods: {
+
+  }
 };
 </script>
 

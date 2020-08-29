@@ -1,12 +1,9 @@
 <template>
-  <div class="mb-12">
+  <div class="mb-12 text-center">
+    <h1 class="color text-3xl pt-8 text-center">Vivo Fixo, Vivo Tv e Vivo Combo</h1>
+
     <Tabs />
-    <swiper ref="mySwiper" :options="swiperOptions">
-      <swiper-slide>
-        <CarouselProducts />
-      </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
-    </swiper>
+    <CarouselProducts />
   </div>
 </template>
 
@@ -27,7 +24,6 @@ export default {
       );
       this.$store.commit("infoStore/setResult", this.formatApiResult(data));
     },
-
     formatApiResult(apiResult) {
       const tabs = [
         ...new Set(
@@ -36,7 +32,6 @@ export default {
           })
         ),
       ];
-
       const retArray = tabs.map((value) => {
         return {
           tab: value,
@@ -45,10 +40,19 @@ export default {
           }),
         };
       });
-
       return retArray;
     },
   },
 
+  mounted() {
+    this.getList();
+  },
 };
 </script>
+
+
+<style lang="postcss" scoped>
+.color {
+  color: #660099;
+}
+</style>
