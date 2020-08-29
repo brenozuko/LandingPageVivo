@@ -19,6 +19,15 @@ import BannerBottom from "~/components/BannerBottom";
 import ServiceContainer from "~/components/ServiceContainer/ServiceContainer";
 import Footer from "~/components/Footer";
 export default {
+  components: {
+    Header,
+    Banner,
+    Consulta,
+    ProductContainer,
+    BannerBottom,
+    ServiceContainer,
+    Footer
+  },
   head: {
     link: [
       {

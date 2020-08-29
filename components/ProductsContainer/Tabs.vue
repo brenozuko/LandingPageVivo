@@ -2,34 +2,16 @@
   <div class="flex flex-wrap ml-8 justify-start">
     <div>
       <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+        <li
+          v-for="(item, index) in apiResult"
+          :key="item.tab"
+          class="-mb-px mr-2 last:mr-0 flex-auto text-center"
+        >
           <a
-            class="font-bold cursor-pointer uppercase px-4 py-3 shadow-lg rounded block leading-normal"
-            v-on:click="toggleTabs(1)"
-            v-bind:class="{'text-purple-600 bg-gray-200': openTab !== 1, 'text-white bg-purple-600': openTab === 1}"
-          >Internet</a>
-        </li>
-        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-          <a
-            class="font-bold cursor-pointer uppercase px-5 py-3 shadow-lg rounded block leading-normal"
-            v-on:click="toggleTabs(2)"
-            v-bind:class="{'text-purple-600 bg-gray-200': openTab !== 2, 'text-white bg-purple-600': openTab === 2}"
-          >Internet + Fixo</a>
-        </li>
-        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-          <a
-            class="font-bold cursor-pointer uppercase px-5 py-3 shadow-lg rounded block leading-normal"
-            v-on:click="toggleTabs(3)"
-            v-bind:class="{'text-purple-600 bg-gray-200': openTab !== 3, 'text-white bg-purple-600': openTab === 3}"
-          >Internet + Tv</a>
-        </li>
-
-        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-          <a
-            class="font-bold uppercase cursor-pointer px-5 py-3 shadow-lg rounded block leading-normal"
-            v-on:click="toggleTabs(4)"
-            v-bind:class="{'text-purple-600 bg-gray-200': openTab !== 4, 'text-white bg-purple-600': openTab === 4}"
-          >Internet + Fixo + TV</a>
+            class="font-bold  cursor-pointer uppercase px-4 py-3 shadow-lg rounded block leading-normal"
+            @click="toggleTabs(index)"
+            :class="{'text-white bg-purple-600': tabIndex === index, 'text-purple-600 bg-gray-200': tabIndex !== index}"
+          >{{item.tab}}</a>
         </li>
       </ul>
       <div
@@ -40,23 +22,24 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
-  name: "purple-tabs",
-  data() {
-    return {
-      openTab: 1,
-    };
-  },
   methods: {
-    toggleTabs: function (tabNumber) {
-      this.openTab = tabNumber;
+    toggleTabs(index) {
+      this.$store.commit("infoStore/setTabIndex", index);
     },
+  },
+  computed: {
+    ...mapState({
+      apiResult: (state) => state.infoStore.apiResult,
+      tabIndex: (state) => state.infoStore.tabIndex,
+    }),
   },
 };
 </script>
 
 <style lang="postcss" scoped>
-  .tab-border{
-    border-bottom: 4px solid #660099;
-  }
+.tab-border {
+  border-bottom: 4px solid #660099;
+}
 </style>

@@ -34,6 +34,14 @@ import ServiceControle from "./ServiceControle";
 import ServiceTv from "./ServiceTv";
 import ServiceFixo from "./ServiceFixo";
 export default {
+  components: {
+    ServiceFibra,
+    ServiceInternet,
+    ServiceControle,
+    ServiceTv,
+    ServiceFixo,
+  },
+
   name: "carrousel",
   data() {
     return {
