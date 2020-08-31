@@ -1,9 +1,9 @@
 <template>
   <div class="lg:flex justify-center py-4 background-consulta">
-    <div class="flex items-center justify-center w-full flex-wrap">
+    <div class="flex items-center align-middle justify-center w-full flex-wrap">
       <img src="../assets/img/place.png" class="hidden lg:inline-block lg:mr-2" alt="place icon" />
       <h1 class="lg:mr-20 lg:mb-0 mb-8">Consulte sua cobertura</h1>
-      <input type="text" class="lg:mr-4 mb-4 rounded-lg py-4 lg:px-6 px-12" placeholder="Digite seu CEP" />
+      <input type="text" class="lg:mr-4 lg:mb-0 mb-4 rounded-lg py-4 lg:px-6 px-12" placeholder="Digite seu CEP" />
       <input
         type="text"
         class="rounded-lg lg:mr-0 py-4 lg:px-6 px-12"
